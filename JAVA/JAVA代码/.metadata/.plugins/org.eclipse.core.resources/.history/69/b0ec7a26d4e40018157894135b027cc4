@@ -1,0 +1,11 @@
+package com.heima.lianxi;
+
+import java.util.ArrayList;
+
+public class ArratListDemo {
+public static void main(String[] args) {
+	ArrayList<String> arry=new ArrayList<String>();
+	arry.add("Hello");
+	System.out.println(arry);
+}
+}

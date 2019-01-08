@@ -1,0 +1,18 @@
+package com.itstar.wqc01;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.ObjectInputStream;
+
+public class objectInputStreamTest01 {
+	
+	public static void main(String[] args){
+		//1 ≥ı ºªØ objectInputStream
+		ObjectInputStream ois=null;
+		FileInputStream fs=null;
+		
+		fs=new FileInputStream(new File("D:\\1\\javaTest\\4.txt"));
+		ois=new ObjectInputStream();
+		
+	}
+}

@@ -1,0 +1,22 @@
+package com.heima.lianxi;
+
+public class StringBuildDemo {
+	public static void main(String[] args) {
+		
+		StringBuilder str=new StringBuilder();
+		str.append("Hello").append("World23333333333333333333333");
+		System.out.println(str);
+		str.reverse();
+		System.out.println(str);
+		
+		System.out.println(str.length());
+		System.out.println(str.capacity());
+		
+		str.delete(0, 5);
+		System.out.println(str);
+		
+		
+		str.delete(0, str.length());
+		System.out.println(str);
+}
+}

@@ -1,0 +1,19 @@
+package com.itstar.wqc03;
+
+public class PriorityTest {
+	public static void main(String[] args) {
+		
+		//1 初始化 runnable 对象
+		MyRunnable myrunnable=new MyRunnable();
+		
+		//调用 以 ruannable 参数为对象的构造函数
+		Thread th1 =new Thread(myrunnable);
+		System.out.println(th1.getPriority());
+		System.out.println(th1.MAX_PRIORITY);
+		System.out.println(th1.MIN_PRIORITY);
+		
+		
+		
+		
+	}
+}

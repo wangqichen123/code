@@ -1,0 +1,4 @@
+﻿  源1.cpp
+c:\users\wqc\source\repos\project1\project1\源1.cpp(8): error C2882: “std”: 在表达式中非法使用命名空间标识符
+c:\users\wqc\source\repos\project1\project1\源1.cpp(8): error C2143: 语法错误: 缺少“;”(在“:”的前面)
+c:\users\wqc\source\repos\project1\project1\源1.cpp(8): error C2059: 语法错误:“:”

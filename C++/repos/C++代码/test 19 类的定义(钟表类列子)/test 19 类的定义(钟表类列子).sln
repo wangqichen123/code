@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2003
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test 19 类的定义(钟表类列子)", "test 19 类的定义(钟表类列子)\test 19 类的定义(钟表类列子).vcxproj", "{9340D69E-144F-4F59-B308-9992FD159180}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9340D69E-144F-4F59-B308-9992FD159180}.Debug|x64.ActiveCfg = Debug|x64
+		{9340D69E-144F-4F59-B308-9992FD159180}.Debug|x64.Build.0 = Debug|x64
+		{9340D69E-144F-4F59-B308-9992FD159180}.Debug|x86.ActiveCfg = Debug|Win32
+		{9340D69E-144F-4F59-B308-9992FD159180}.Debug|x86.Build.0 = Debug|Win32
+		{9340D69E-144F-4F59-B308-9992FD159180}.Release|x64.ActiveCfg = Release|x64
+		{9340D69E-144F-4F59-B308-9992FD159180}.Release|x64.Build.0 = Release|x64
+		{9340D69E-144F-4F59-B308-9992FD159180}.Release|x86.ActiveCfg = Release|Win32
+		{9340D69E-144F-4F59-B308-9992FD159180}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C714D9CA-70A8-4151-9EAC-8B85130DAA83}
+	EndGlobalSection
+EndGlobal

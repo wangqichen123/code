@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;MyRunnable.java&apos; to &apos;day25/src/com.itstar.wqc03&apos;&#x0D;&#x0A;- Original project: &apos;day25&apos;&#x0D;&#x0A;- Destination element: &apos;day25/src/com.itstar.wqc03&apos;&#x0D;&#x0A;- Original element: &apos;com.itstar.wqc02.MyRunnable.java&apos;" description="Copy compilation unit" destination="/src&lt;com.itstar.wqc03" element1="/src&lt;com.itstar.wqc02{MyRunnable.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1544976912731" units="1" version="1.0"/>
+</session>

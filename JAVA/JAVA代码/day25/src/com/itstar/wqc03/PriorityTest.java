@@ -1,0 +1,33 @@
+package com.itstar.wqc03;
+
+public class PriorityTest {
+	public static void main(String[] args) {
+		
+		//1 初始化 runnable 对象
+		MyRunnable myrunnable=new MyRunnable();
+		
+		//2 调用 以 ruannable 参数为对象的构造函数
+		Thread th1 =new Thread(myrunnable);
+		
+		//3 输出线程的默认 最大 最小的优先级
+		System.out.println(th1.getPriority());
+		System.out.println(th1.MAX_PRIORITY);
+		System.out.println(th1.MIN_PRIORITY);
+		
+		/**
+		 * 测试优先级的执行顺序
+		 * 
+		 * 
+		 */
+		//4 设置线程的优先级  优先级是一种概率 并不是优先级高就一定先执行  只是执行概率比优先级底的大一些
+		Thread th2=new Thread(myrunnable);
+		th1.setPriority(10);
+		th2.setPriority(1);
+		th1.setName("优先级为10");
+		th2.setName("优先级为1");
+		//5 开启线程
+		th1.start();
+		th2.start();
+		
+	}
+}

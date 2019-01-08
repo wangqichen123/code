@@ -1,0 +1,42 @@
+package com.itstar.wqc01;
+
+import java.io.File;
+
+public class FileTest02 {
+     //写函数 得到某个文件夹下 所有的文件
+	public static void main(String[] args) {
+		
+	}
+	
+	
+	
+	
+	
+	
+	public static void listAllFiles(String path){
+		//创建文件对象
+		File file=new File(path);
+		if(file.isDirectory()){
+			//获得该文件夹下所有的文件及文件夹
+			File[] files=file.listFiles();
+			//遍历-增强For
+			for(File f:files){
+				if(f.isFile()){
+					System.out.println(f.getAbsolutePath());
+				}else{
+					//如果是目录  则调用自己 进行层层剥离
+					listAllFiles(f.getAbsolutePath());
+				}
+				
+				
+			}
+			
+		}else{
+			//如果是文件直接输出文件的绝对路径
+			System.out.println(file.getAbsolutePath());
+		}
+		
+	}
+}
+
+	
