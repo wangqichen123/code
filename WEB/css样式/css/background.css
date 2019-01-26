@@ -1,0 +1,17 @@
+body{
+	background-image: url(../img/bg.jpg);
+	background-repeat: no-repeat;
+	background-size:1000px 1000px;
+	/* background-clip: border-box; */
+/* 	background-origin: border-box; */
+	/* background-attachment:fixed; *//*fixed 设置不滚动*/
+	/* background-position:center top;0px 0px 图片的位置*/
+}
+/* p{ 
+	background-image: url(../img/bg.jpg);单独一个p标签或者别的什么标签 都可以添加背景图片
+	width: 200px; 
+	width: 130px;
+	background-color: deeppink;
+	padding: 10px; 
+	padding: 10px; 内边框距离文字的距离
+} */

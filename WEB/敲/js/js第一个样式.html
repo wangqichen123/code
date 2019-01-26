@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			#div1{width: 200px; height: 200px ; background-color: red;margin: 0;}
+		</style>
+		
+		<script>
+			function toGreen(){
+				
+				var doc=document.getElementById('div1');
+				
+				doc.style.width='300px';
+				doc.style.height='300px';
+				doc.style.backgroundColor='green';
+// 				document.getElementById('div1').style.width='300px';
+// 				document.getElementById('div1').style.height='300px';
+// 				document.getElementById('div1').style.backgroundColor='green';
+				
+			}
+			function toRed(){
+				
+				var doc=document.getElementById('div1');
+				doc.style.width='200px';
+				doc.style.height='200px';
+				doc.style.backgroundColor='red';
+// 				document.getElementById('div1').style.width='200px';
+// 				document.getElementById('div1').style.height='200px';
+// 				document.getElementById('div1').style.backgroundColor='red';
+				
+			}
+			
+		</script>
+		
+	</head>
+	<body>
+		<div id="div1" onmouseover="toGreen()" onmouseout="toRed()"></div>
+	
+		<!-- <div id="div1" onmouseover="document.getElementById('div1').style.width='300px';document.getElementById('div1').style.height='300px';
+		document.getElementById('div1').style.backgroundColor='green';"onmouseout="document.getElementById('div1').style.width='200px';document.getElementById('div1').style.height='200px';
+		document.getElementById('div1').style.backgroundColor='red';"></div> -->
+	</body>
+</html>

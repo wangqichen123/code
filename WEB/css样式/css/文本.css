@@ -1,0 +1,35 @@
+/* body a{
+	color: aqua;
+} */
+
+/* p{
+	color: red;
+	text-align: center; 
+} */
+/* h1{
+	text-indent: -2em; 首行缩进两个字符
+	padding: 2em; 2边距
+}
+ */
+/* p{
+	text-indent: 2em;
+} */
+
+/* p w{
+	text-transform: lowercase;
+}
+p q{
+	text-transform: uppercase;
+}
+p c{
+	text-transform: capitalize;
+} */
+
+/* p{
+	text-shadow: 5px 5px 1px dodgerblue;第一个值是阴影距离左的距离  第二个 距离当前文本上方的距离 第三个是清晰度的设计 第四个是背景颜色
+} */
+
+p{
+	width: 300px;
+	text-wrap: nomal;
+}

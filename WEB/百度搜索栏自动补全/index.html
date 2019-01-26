@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>百度</title>
+		<style>
+			*{margin: 0;padding: 0;}
+			img,input{
+				display: block;
+				margin: 0 auto;
+			}
+			#logo{
+				margin-top: 150px;
+			}
+			#text{
+				width:600px ;
+				height: 35px;
+			}
+			ul.menu{
+				display: none;
+				list-style-type: none;
+				width: 600px;
+				border: 1px solid #000;
+				
+				margin: auto;
+				line-height: 30px;
+				text-indent: 14px;
+			}
+			.item{
+				cursor: pointer;
+			}
+			.item :hover{
+				background: azure;
+			}
+		</style>
+	</head>
+	<body>
+		<img src="img/9.png" id="logo" width="260" alt=""/>
+		<input type="text" id="text" onkeyup="query(this)" />
+		<ul class="menu">
+			<!-- <li class="item">龙度娘</li>
+			<li class="item">龙度娘</li>
+			<li class="item">龙度娘</li>
+			<li class="item">龙度娘</li>
+			<li class="item">龙度娘</li> -->
+			
+			
+		</ul>
+		<script type="text/javascript">
+			/*
+			百度 
+				1 什么时候会有关键字补全的功能出现
+				2 根据什么内容去查询什么关键字的补全
+				3 根据内容去获取相对应的关键字补全
+				4 把获取的数据渲染到页面中
+				
+				解析url 地址:
+					通信网络协议  https/http/ftp/ftps/mysql     // ->  结束协议
+					网络主机地址 ip地址 / 域名 
+					端口     默认80就可以不写 
+					路径/路由  访问服务器中的资源的方式
+		(?号后面)	参数       key=value
+			*/
+			function query(obj){
+				//获取现在文本框的内容
+				var content=obj.value
+				var oScript=document.createElement("script");
+				oScript.src="https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd="+content+"&cb=s"
+				
+				document.body.appendChild(oScript)
+			}
+			
+			function s(data){
+				console.log(data.s)
+				
+			}
+			
+		</script>
+		
+		<script type="text/javascript">
+			src="https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=1111&cb=s"
+		</script>
+	</body>
+</html>

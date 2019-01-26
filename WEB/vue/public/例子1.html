@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<link rel="icon" href="<%= BASE_URL %>favicon.ico">
+		<title>v-cloak</title>
+		<script src="../vue.js"></script>
+	</head>
+	<style>
+		.fade-enter-active,.fade-leave-active {
+			transition: opacity .5s;
+		}
+
+		.fade-enter,.fade-leave-to
+
+		/* .fade-leave-active below version 2.1.8 */
+			{
+			opacity: 0;  设置不透明度级别
+		}
+	</style>
+	<body>
+		<div id="app">
+		<!-- 	<button v-on:click="show = !show">
+				Toggle
+			</button>
+			<transition name="fade">
+				<p v-if="show">hello</p>
+			</transition> -->
+			<p>{{ msg |  msgFormat }} </p>
+		</div>
+		
+		<script>
+				Vue.filter('msgFormat',function(msg){
+					return msg.replace('111','666')
+				})
+// 				
+// 				Vue.filter('msgFormat',function(msg){
+// 					return msg.replace('111','6666')
+// 				)}
+				
+				
+			 var vm=new Vue({
+				el: '#app',
+				data: {
+					// show: true
+					msg:'111,222,333,111,111,111,222,111'
+				},
+				methods:{
+					
+				}
+			})
+		</script>
+	</body>
+</html>

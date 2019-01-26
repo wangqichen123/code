@@ -1,0 +1,9 @@
+.waterfall{
+	column-width: 250px;  /* 宽的属性 */
+	column-gap: 5px;    /* 间距5px */
+}
+
+.waterfall div{
+	width: 250px;  /* 定义div宽度为250px */
+	margin: 5px;	/* 定义边距为5px */
+}

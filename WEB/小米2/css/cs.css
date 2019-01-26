@@ -1,0 +1,93 @@
+body{
+	padding: 0px;
+	margin: 0px;
+}
+body{
+	width: 100%;
+	height:1600px;
+	font: 14px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+}
+
+a{
+	text-decoration: none;
+}
+.head{
+	padding: 2px;
+	height: 40px;
+	width: 100%;
+	/* background: aqua */
+	
+	background-color: #333;
+}
+.head_font a{
+	color: #B0B0B0;  
+	font-size: 12px;  
+}
+.head_font a:hover{
+	color: #fff;
+}
+.head_font{
+	height: 40px;
+	margin: 0 auto;
+	width: 1226px;
+	
+}
+
+.head_font_left{
+	float: left;
+	line-height: 40px;
+}
+.head_font-color{
+	color: #fff;
+}
+
+.head_font_right{
+	float: right;
+}
+.head_font-color_right{
+	color: #fff;
+	line-height: 40px;
+}
+.head_goin{
+	float: left;
+}
+
+.head_buycar{
+	width: 80px;
+	text-align: center;
+	float: right;
+	line-height: 40px;
+	height: 40px;
+	margin-right: 4px;
+}
+.head_buycar a{
+	display: block;
+}
+.head_buycar a:hover{
+	color: #FF4500;
+	background-color: #fff;
+}
+.head_buycar{
+	background-color: #424242;
+}
+
+.head_font_buycar{
+	color: #A9A9A9;
+}
+
+.head2{
+	height: 100px;
+	width: 100%;
+	/* border: 1px solid orangered ; */
+}
+
+.boday{
+	height: 800px;
+	width: 100%;
+	border: 1px solid blanchedalmond;
+}
+.footer{
+	height: 40px;
+	width: 100%;
+	border: 1px solid aqua;
+}

@@ -1,0 +1,14 @@
+.ul_head{
+	height: 120px;
+	width: 100%;
+	background-color: #A9A9A9;
+	list-style-type: none;
+	display:inline-block;
+	margin:0px;
+	padding: 0px;
+}
+
+.li_head{
+	display:inline-flex;
+	padding: 10px;
+}

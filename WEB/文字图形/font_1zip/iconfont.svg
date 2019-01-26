@@ -1,0 +1,29 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<!--
+2013-9-30: Created.
+-->
+<svg>
+<metadata>
+Created by iconfont
+</metadata>
+<defs>
+
+<font id="iconfont" horiz-adv-x="1024" >
+  <font-face
+    font-family="iconfont"
+    font-weight="500"
+    font-stretch="normal"
+    units-per-em="1024"
+    ascent="896"
+    descent="-128"
+  />
+    <missing-glyph />
+    
+    <glyph glyph-name="dian" unicode="&#58894;" d="M377.804 368.15c0-79.565 64.5-144.068 144.067-144.068s144.067 64.5 144.067 144.067c0 79.566-64.5 144.067-144.067 144.067-79.566 0-144.067-64.5-144.067-144.067z"  horiz-adv-x="1024" />
+
+    
+
+
+  </font>
+</defs></svg>

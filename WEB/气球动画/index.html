@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+			
+			body{
+				margin: 0;
+				background-color: #ccc;
+				overflow: hidden;
+			}
+			.ballon{
+				width: 160px;
+				height: 160px;
+				background-color: #faf9f9;
+				border-radius: 160px  160px 64px 160px;
+				transform: rotate(45deg);
+				box-shadow: -8px -8px 80px -8px #873940 inset;  /* 盒子阴影 x轴 Y轴方向偏移
+	羽化以及 扩散 内扩散inset*/	}
+			.ballon::after{
+				content: '';/*激活伪元素  默认为行内元素*/
+				/* display: block; */
+				position: absolute;
+				right: 0;
+				bottom: 2px;
+				width: 0px;
+				height: 0px;
+				border: 8px solid transparent;/*占位符*/
+				border-right-color:#873940 ;
+				transform: rotate(45deg);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="ballon">
+		
+		</div>
+		<script>
+		   // alert("wqc");
+		   /*
+				什么是javascript
+				  给予原型动态解释性脚本语言
+			      核心:原型  词法作用域  上下文
+				 
+				 打气球：
+				 需求分析:
+				    1:js动态生成气球  DOM操作
+						1.初始化的气球数量
+						2 如何生成气球  DOM生成气球
+							1创建  creatElement
+							2 初始化domshuxing
+							3 添加到body  appendChild
+						3 气球位置初始化
+							1 x轴位置随机
+							
+							2 Y轴位置 = 浏览器的高度
+					2:让气球动起来
+					3 点击气球  气球加速动画后消失
+					4 业务逻辑优化
+			*/	
+		   var num=10; //初始化气球数量
+		   var wW= window.innerWidth;
+		   var wH=window.innerHeight;
+		   init();
+		   //DOM 生成气球
+		   function init(){
+		   for(var i=0;i<num;i++){//不构成块级作用域
+		   var oBalloon=document.createElement('div');
+		   var randomX=(~~Math.abs(Math.random()* wW));//~~去除小数
+		   console.log(randomX);
+		   oBalloon.className='balloon';
+		   oBalloon.style.left= randomX +'px';
+		   document.body.appendChild(oBalloon);
+		     }
+		   }
+		   
+		</script>
+		
+	</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title>走马灯</title>
+	<script src="../vue.js"></script>
+  </head>
+  <body>
+		
+	 <div id="app2">
+		 <input type="button" value="浪起来" @click="lang" />
+		 <input type="button" value="淡定"/>
+		 <h4 v-text="wqc"></h4>
+	 </div>
+	 
+	 <script>
+		 // 如果在vm中调用data中的数据或者调用methods中的方法,用this
+		 var vm=new Vue({
+			 el:'#app2',
+			 data:{
+				 wqc:'猥琐发育，别浪,猥琐发育，别浪',
+			 },
+			 methods:{
+				 lang(){
+					 console.log(this.wqc)
+				 }
+
+			 }
+		 })
+	 </script>
+  </body>
+</html>

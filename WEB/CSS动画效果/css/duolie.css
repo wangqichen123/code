@@ -1,0 +1,10 @@
+.div1{
+	column-count: 5; /* 定义多列的列数 */
+	column-gap: 50px; /* 定义多列的间隔 */
+	column-rule:  5px outset  chartreuse; /* 定义用什么分割的多列 分割线的宽度和颜色 */
+}
+
+
+/* column-count
+column-gap
+column-rule */

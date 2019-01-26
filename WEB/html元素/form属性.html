@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+	<!-- <form id="textform">
+			<input type="text" />
+		</form>
+		<textarea form="textform"></textarea>
+		 -->
+		 <!-- <form id="textform">
+			 <input  type="submit" name="s1" value="v1" formaction="wqc.jsp"/>提交到wqc。jsp页面
+			 <input  type="submit" name="s2" value="v2" formaction="wqc.jsp"/>提交到wqc。jsp页面
+			 <input  type="submit" name="s3" value="v3" formaction="wqc.jsp"/>提交到wqc。jsp页面
+		 </form> -->
+		<!-- <form id="textform"></form>
+		 <input type="submit" name="s1" value="v1" formmethod="post" formaction="wqc.jsp"/>提交
+		 <input type="submit" name="s2" value="v2" formmethod="get" formaction="wqc.jsp"/>提交
+	</body> -->
+	<!-- <form id="textform">
+		<input type="text" formenctype=" text/plain" />
+		<input type="text" formenctype=" multipart/form-data" />
+		<input type="text" formenctype=" application/x-www-form-urlencoded" />
+
+		
+	</form> -->
+	<!-- <form id="textform">
+		<input  type="submit" name="s1" value="v1" formtarget="_blank" formaction="wqc.jsp"/>提交到wqc。jsp页面
+		<input  type="submit" name="s2" value="v2" formtarget="_self" formaction="wqc.jsp"/>提交到wqc。jsp页面
+		<input  type="submit" name="s3" value="v3" formtarget="_parent" formaction="wqc.jsp"/>提交到wqc。jsp页面
+		<input  type="submit" name="s3" value="v3" formtarget=" _top" formaction="wqc.jsp"/>提交到wqc。jsp页面
+		<input  type="submit" name="s3" value="v3" formtarget=" framename" formaction="wqc.jsp"/>提交到wqc。jsp页面
+	</form>
+	 -->
+	 <form>
+		 <input type="text"autofocus=""/>
+		 <input type="text" />
+	 </form>
+</html>
+<!--
+formaction:提交内容到地址中去
+formmethod:get 和 post 提交区别  post提交更加安全  get提交 ：会把数据加载在地址栏上面  非常不安全
+formenctype:
+3种形式 
+text/plain 表单中的空格被加载为加号，但不对表单中的特殊字符进行编码
+multipart/form-data 不对字符进行编码	
+	
+formtarget:5种
+_blank:在新的页面中打开  会生成一个新网页
+_self:默认在相同的框架from中打开
+_parent:在当前框架的负框架打开
+_top:在当前窗口打开
+framename:在指定框架中打开
+autofocus:为文本框  选择框  按钮控件加上autufocus属性
+ 当画面打开时，该控件自动获得光标焦点  注意  第一优先级放这个属性
+ -->

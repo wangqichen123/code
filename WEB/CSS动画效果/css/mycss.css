@@ -1,0 +1,71 @@
+/* div{
+	height: 200px;
+	width: 200px;
+	background-color: darkorange;
+} */
+
+/* .div2{
+	transform: translate(200px,100px); 2D 水平移动 x轴200px y轴100px
+} */
+
+/* .div2{
+	transform: rotate(45deg); 2D 旋转 45度
+} */
+
+/* .div2{
+	margin-top: 200px;
+	transform: scale(0.5); 2D 缩放  将长和宽都变为元长度的一半 
+} */
+
+/* .div2{
+	transform: skew(20deg,20deg); 沿着x y轴旋转20度
+} */
+
+/* .div2{
+	transform: matrix(); 矩阵  2D 用6个值的矩阵 3D用16个值的矩阵
+} */
+
+/* .div2{
+	transform: rotateY(130deg);  /* rotateX Y 3D效果 翻转度数 */
+
+
+/* div{
+	height: 200px;
+	width: 200px;
+	background-color: darkgoldenrod;
+	-webkit-transition: width 2s,height 2s,-webkit-transform 2s;
+	transition: width 2s,height 2s,transform 2s;
+}
+
+div:hover{
+	height: 300px;
+	width: 300px;
+	transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+} */
+
+div{
+	width: 100px;
+	height: 100px;
+	background-color:red;
+	position: relative;
+	animation: ani 3s infinite alternate; /* 3秒时间执行完动画效果 infinite alternate当动画完成后,到着运行
+ linear infinite 一直运行 线性无限*/}
+
+    @keyframes ani{
+	0%{
+		background: red  ;left: 0px;top: 0px;
+	}
+	25%{
+		background: burlywood; left: 200px;top: 200px;
+	}
+	50%{
+		background: blueviolet; left: 200px;top: 200px;
+	}
+	75%{
+		background: chartreuse; left: 0px;top: 200px;
+	}
+	100%{
+		background: red; left: 0px;top: 0px;
+	}
+}

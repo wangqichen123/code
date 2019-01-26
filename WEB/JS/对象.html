@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>对象</title>
+	</head>
+	<body>
+	<!-- 	<script>
+			people=new Object();
+			people.name="wqc";
+			people.age="23";
+			document.write("name:"+people.name);
+			
+			document.write("age:"+people.age);
+		</script> -->
+		<!-- <script>
+			people={name:"wqc",age:"23"};
+			document.write("name"+people.name+"age"+people.age);
+		</script> -->
+		<script>
+			function demo(name,age){
+				this.name=name;
+				this.age=age;
+			}
+			wqc=new demo("wqc","23");
+			document.write("name:"+wqc.name+"age:"+wqc.age);
+		</script>
+	</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<form>
+			<input id="txt"  type="text"/>
+			<input id="btn" type="button" onclick="demo()" value="按钮"/>		
+		</form>
+		<script>
+			function demo(){
+				try{
+					var e=document.getElementById("txt").value;
+					if(e==""){
+						throw "第一个用户输入异常";
+					}
+				}catch(err){
+					alert(err);
+				}
+				
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title>defaultvue</title>
+	<script src="../vue.js"></script>
+  </head>
+  <body>
+	    <!-- 将来new的vue实例，控制这个元素中的所有内容 -->
+		<!-- vue实例所控制的元素区域，就是v -->
+		<div id="box">
+			
+			<p>{{msg}}</p>
+			
+		</div> 	
+			
+   
+   <script>
+	   //mvc是一种设计模式,设计项目逻辑
+	   //model(数据模型) view(视图) controll(控制器)
+	   
+	   // new出来的这个vm对象,就是mvvm中的vm调度者
+	   var vm = new Vue({
+		   el:'#box',//表示,当前new的这个vue实例,要控制页面上的那个区域
+		   data:{//data属性中,存放的el中要用到的数据,就是mvvm中的m,专门用来保存每个页面中的数据的
+			
+			   msg:'13'
+		   }
+	   })
+	   
+	 
+   </script>
+		
+  </body>
+</html>

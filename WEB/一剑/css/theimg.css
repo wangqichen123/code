@@ -1,0 +1,46 @@
+.div_allimg{
+	height: 600px;
+	width: ;
+	background-color: chartreuse;
+	
+}
+
+.div_img1{
+	height: 500px;
+	width: 45%;
+	background-image: url(../img/ts1-180817.png);
+	position: absolute;
+	margin: 0 0 0 500px;
+}
+
+.div_img2{
+	height: 500px;
+	width: 45%;
+	background-image:url(../img/ts5-180925.png);
+	position: absolute;
+	margin: 0 0 0 500px;
+}
+
+.div_img3{
+	height: 500px;
+	width: 45%;
+	background-image:url(../img/ts2-180817.png);
+	position: absolute;
+	margin: 0 0 0 500px;
+}
+
+.div_img4{
+	height: 500px;
+	width: 45%;
+	background-image:url(../img/ts3-180817.png);
+	position: absolute;
+	margin: 0 0 0 500px;
+}
+
+.div_img5{
+	height: 500px;
+	width: 45%;
+	background-image:url(../img/ts4-180817.png);
+	position: absolute;
+	margin: 0 0 0 500px;
+}

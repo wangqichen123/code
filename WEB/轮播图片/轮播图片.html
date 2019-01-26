@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>苏宁易购轮播</title>
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+	<style>
+		body{
+			margin: 0;
+		}
+		.box{
+			width: 830px;
+			height: 476px;
+			background-color: hotpink;
+			margin: 140px  auto 0;
+			position: relative;/*相对定位  参考物*/
+			/**
+			 * 复合型写法
+				1个值  上下左右为px
+				2个值  上下为    左右为
+				3个值  上    左右    下
+				4个值  上   右    下  左
+				单例型写法
+				top  botten  left  right
+			 */
+		}
+		
+		.list{
+			width: 830px;
+			height: 476px;
+			position: absolute;/*绝对定位  运动的*/
+			left: 0;
+			top: 0;
+		}
+		.btn{
+			width:100% ;
+			position: absolute;
+			bottom: 10px
+			
+			
+		}
+		.btn span{
+			display: inline-block;
+			width:20px ;
+			height: 20px;
+			text-align: center;
+		}
+	</style>
+	
+	</head>
+	<body>
+		<div class="box">
+			<!--8图片-->
+			<div class="list">
+				<img src="img/1.jpg" width: "830" height: "476" alt="苏宁">
+				
+			</div>
+			<div class="list">
+				<img src="img/2.jpg" width: "830" height: "476" alt="苏宁">
+				
+			</div>
+			<div class="list">
+				<img src="img/3.jpg" width: "830" height: "476" alt="苏宁">
+				
+			</div>
+			<div class="list">
+				<img src="img/4.jpg" width: "830" height: "476" alt="苏宁">
+				
+			</div>
+			<div class="list">
+				<img src="img/5.jpg" width: "830" height: "476" alt="苏宁">
+				
+			</div>
+			<div class="list">
+				<img src="img/6.jpg" width: "830" height: "476" alt="苏宁">
+				
+			</div>
+			<div class="list">
+				<img src="img/7.jpg" width: "830" height: "476" alt="苏宁">
+				
+			</div>
+			<div class="list">
+				<img src="img/8.jpg" width: "830" height: "476" alt="苏宁">
+				
+			</div>
+				
+		</div>
+		<!--8按钮-->
+		<div class="btn">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		
+	</body>
+</html>

@@ -1,0 +1,128 @@
+body{  /* 设置高度出现滚动条 */
+	margin: 0;
+	padding: 0;
+	height: 2500px;
+}
+body{  /* 小米网站的字体样式 */
+	font: 14px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+}
+a{
+	text-decoration: none;  /* 消除链接小面的线 */
+}
+
+.tophead{   /* 顶部的大框 */
+	/* border: 1px solid black; */
+	background-color: #333;
+	height: 40px;
+}
+.container{  /* 容器,在tophead里面 将文字装起来 */
+	/* border: 1px solid black; */
+	margin:  0  auto;
+	width: 1226px;
+}
+.container::before,.container::after{ /* 和下一条样式一起,把浮动取消的边框,重新载入回来 */
+	content: "";
+	display: table;
+}
+.container::after{
+	clear: both;
+}
+
+.tophead a{
+	color: #B0B0B0;  /* tophead里面的字体颜色 */
+	font-size: 12px;  /* 字体大小 */
+}
+.tophead a:hover{   /* 鼠标移到tophead中的a时 ,颜色变化 */
+	color: #fff;   
+}
+
+.tophead_nav{ /* nav里面的内容向左浮动  设置高度和字体高度让字体显示居中 font_size消除空格*/
+	float: left;
+	height: 40px;
+	line-height: 40px;
+	font-size: 0;       
+}
+.tophead_nav span{ /* 上一条样式size0将 span中的竖消失了,设置span大小,颜色,字体,间距 */
+	font-size: 12px;
+	color: #424242;
+	font-family: sans-serif;
+	margin: 0.5em;
+}
+
+.tophead_goin,.tophead_baycar{ /* goin和baycar里面的内容向右浮动 */
+	float: right;
+}
+
+.tophead_baycar a{  /* 设置购物车,块元素,设置高度和字体高度让它居中,文本居中 */
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	width: 120px;
+	background-color: #424242;
+}
+.tophead_baycar a:hover{  /* 设置购物车鼠标移入时样式,改变背景颜色和字体颜色 */
+	background-color: #fff;
+	color: #ff6700;
+}
+
+.tophead_baycar span{   /* 设置购物车那个0的大小和距离,让它离得近一些 */
+	margin-left: -4px;
+	font-size: 12px;
+}
+.tophead_goin{    /* 右边距15px */
+	margin-right: 15px;
+}
+
+.tophead_goin a{    /* 设置右边块登录块的字体样式 */
+	float: left;
+	height: 40px;
+	line-height: 40px;
+	padding: 0 5px;
+	
+}
+.tophead_goin span{   /* 设置右边块登录块的竖线样式 */
+	float: left;
+	font-family:sans-serif ;
+	font-size: 12px;
+	color: #424242;
+	height: 40px;
+	line-height: 40px;
+}
+.tophead_goin .distance{  /* 设置消息通知的样式,让它离购物车远一点 */
+	padding: 0 10px;
+}
+
+.header{      /* 定义第二个头部框 */
+	height:100px ;
+	border: 1px solid red;
+	
+}
+
+.header_logo{    /* 定义logo的样式 */
+	float: left;
+	width: 62px;
+	margin-top: 22px;
+	height: 55px;
+	border: 1px solid red;
+}
+.header_logo a{
+	display: block;
+	width:55px ;
+	height: 55px;
+	background: url(../img/1.jpg)no-repeat 10% 10% ;
+}
+
+.header_nav{     /* 定义nav框里的样式 */
+	float: left;
+	width: 820px;
+	height: 100px;
+	border: 1px solid red;
+}
+.header_search{   /* 定义搜索框里的样式 */
+	float: right;
+	width: 296px;
+	height: 50px;
+	margin-top: 25px;
+	border: 1px solid red;
+}

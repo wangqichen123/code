@@ -1,0 +1,72 @@
+*{
+	margin: 0px;
+	padding: 0px;
+
+}
+.top{
+	width: 100%;
+	height: 50px;
+	background-color: crimson;
+}
+.top_content{
+	width: 75%;
+	height: 50px;
+	background-color: aqua;
+	margin: 0px auto;
+}
+
+.body{
+	margin:40px auto;  /* 和上面的div有一个间距 40 px */
+	width: 75%;
+	height: 1500px;
+	background-color: coral;
+}
+.body_img{
+	width: 100%;
+	height: 400px;
+	background-color: chartreuse;
+}
+
+.body_content{
+	width: 100%;
+	height: 1100px;
+	background-color: #DC143C;
+}
+.bodynode{
+	width: 100%;
+	height: 50px;
+	background-color: darkolivegreen;
+}
+
+.footer{
+	width: 75%;
+	height: 400px;
+	background-color: darkslategray ;
+	margin: 0px auto;
+}
+
+.footing_head{
+	width: 100%;
+	height: 320px;
+	background-color: darkblue;
+	
+}
+
+.footing_foot{
+	width: 100%;
+	height: 80px;
+	background-color: darkmagenta;
+}
+
+img{
+	margin: 10px;
+	opacity: 0.8; /* 透明度 */
+}
+.img_css{
+	border: 1px solid darkgreen;
+	width: auto;
+	height: auto;
+	float: left;
+	text-align: center;
+	margin: 5px;
+}

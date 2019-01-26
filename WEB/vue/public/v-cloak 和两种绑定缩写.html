@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title>v-cloak</title>
+	<style>
+		[v-cloak]{
+			display: none;
+		}
+	</style>
+  </head>
+  
+  <body>
+	 <div id="app">
+		 <!-- 用v-clock能够解决 差值表达式闪烁的问题
+		  就是如果网速过慢，在渲染完成之前会显示成p里的内容
+		  用v-clock将它隐藏，在渲染完成之前就没有内容了，就不会闪烁-->
+		 <p v-cloak>{{wqc}}1111111111111111</p>
+		 <h4 v-text="msg">1111111111111111111</h4>
+		<!-- v-text 默认没有闪烁问题 -->
+		<!-- v-text会覆盖元素中原本的内容，但是 差值表达式  只会替换自己的这个占位符 不会把整个元素的内容清空 -->
+		<div v-html="h1">
+		</div>
+		
+		<!-- <input type="button" value="按钮" v-bind:title="mytitle+'1123'" v-on:click="show"/> -->
+		<input type="button" value="按钮" :title="mytitle+'1123'" @click="show"/>
+															<!-- :等同于v-bind: 
+															     @等同于v-on:   -->
+									<!-- v-bind绑定title 让它知道mytitle是一个变量 
+									   v-bind  vue提供的属性绑定机制  缩写为:
+									     v-on  vue提供的事件绑定机制  缩写为@ -->
+	 </div>
+	 
+	 <script src="../vue.js"></script>
+	 
+	 <script>
+		 var vm=new Vue({
+			 el:'#app',
+			 data:{
+				 msg:'2333',
+				 wqc:'wqcwqc',
+				 h1:'<h1>hahah哈哈，222dd</h1>',
+				 mytitle:'这是一个title',
+			 },
+			 methods:{//这个methods 定义了当前vue中所有的可用方法
+				show:function(){
+					alert('hello');
+				}
+			 }
+			 
+		 })
+	 </script>
+  </body>
+  
+</html>
